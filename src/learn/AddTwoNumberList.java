@@ -32,7 +32,7 @@ public class AddTwoNumberList {
             j--;
         }
 
-        System.out.format("list 1: %s", Arrays.toString(list1));
+        System.out.format("list 1 ssss: %s", Arrays.toString(list1));
         System.out.println();
         System.out.format("list 2: %s", Arrays.toString(list2));
         System.out.println();
