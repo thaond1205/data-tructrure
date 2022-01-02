@@ -6,23 +6,23 @@ import java.util.List;
 public class MedianOfTwoSortedArrays {
     //Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.
 
-    public static void sortedArrays(int[] num1, int[] num2) {
+    public static void sortedArrays(int[] nums1, int[] nums2) {
         List<Integer> merge = new ArrayList<>();
 
         double avg = 0;
         int size = 0;
 
-        if (num1.length > num2.length) {
-            size = num1.length;
+        if (nums1.length > nums2.length) {
+            size = nums1.length;
         } else {
-            size = num2.length;
+            size = nums2.length;
         }
         for (int i = 0; i < size; i++) {
-            if (i < num1.length) {
-                merge.add(num1[i]);
+            if (i < nums1.length) {
+                merge.add(nums1[i]);
             }
-            if (i < num2.length) {
-                merge.add(num2[i]);
+            if (i < nums2.length) {
+                merge.add(nums2[i]);
             }
         }
         avg = merge.stream().mapToDouble(a -> a).sum() / merge.size();
@@ -31,8 +31,8 @@ public class MedianOfTwoSortedArrays {
 
     public static void main(String[] args) {
 
-        int[] num1 = { 1, 2 }, num2 = { 3, 4, 5, 6 };
-        sortedArrays(num1, num2);
+        int[] nums1 = { 1, 2 }, nums2 = { 3, 4, 5, 6 };
+        sortedArrays(nums1, nums2);
     }
 
 }
