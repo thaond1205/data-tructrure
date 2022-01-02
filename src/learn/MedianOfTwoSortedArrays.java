@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MedianOfTwoSortedArrays {
+    //Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.
 
     public static void sortedArrays(int[] num1, int[] num2) {
         List<Integer> merge = new ArrayList<>();
