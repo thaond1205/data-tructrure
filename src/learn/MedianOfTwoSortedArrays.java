@@ -5,14 +5,12 @@ import java.util.List;
 
 public class MedianOfTwoSortedArrays {
 
-    public static void main(String[] args) {
-
-        int[] num1 = { 1, 2 }, num2 = { 3,4,5,6 };
+    public static void sortedArrays(int[] num1, int[] num2) {
+        List<Integer> merge = new ArrayList<>();
 
         double avg = 0;
-        double temp = 0;
-        List<Integer> merge = new ArrayList<>();
         int size = 0;
+
         if (num1.length > num2.length) {
             size = num1.length;
         } else {
@@ -26,11 +24,14 @@ public class MedianOfTwoSortedArrays {
                 merge.add(num2[i]);
             }
         }
-        for (Integer e : merge) {
-            temp += e;
-        }
-        avg = temp / merge.size();
+        avg = merge.stream().mapToDouble(a -> a).sum() / merge.size();
         System.out.println(avg);
+    }
+
+    public static void main(String[] args) {
+
+        int[] num1 = { 1, 2 }, num2 = { 3, 4, 5, 6 };
+        sortedArrays(num1, num2);
     }
 
 }
