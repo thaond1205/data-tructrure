@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ReverseInteger",
+            "request": "launch",
+            "mainClass": "learn.ReverseInteger",
+            "projectName": "java-learn_c754677b"
+        },
+        {
+            "type": "java",
             "name": "Launch MedianOfTwoSortedArrays",
             "request": "launch",
             "mainClass": "learn.MedianOfTwoSortedArrays",
