@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MedianOfTwoSortedArrays",
+            "request": "launch",
+            "mainClass": "learn.MedianOfTwoSortedArrays",
+            "projectName": "java-learn_c754677b"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongSubstring",
+            "request": "launch",
+            "mainClass": "learn.LongSubstring",
+            "projectName": "java-learn_c754677b"
+        },
+        {
+            "type": "java",
             "name": "Launch Java Program",
             "request": "launch",
             "mainClass": ""
