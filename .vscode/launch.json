@@ -9,6 +9,20 @@
             "name": "Launch StringToInteger",
             "request": "launch",
             "mainClass": "learn.StringToInteger",
+            "projectName": "data-tructrure_e303ae58"
+        },
+        {
+            "type": "java",
+            "name": "Launch AddTwoNumberList",
+            "request": "launch",
+            "mainClass": "learn.AddTwoNumberList",
+            "projectName": "data-tructrure_e303ae58"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringToInteger",
+            "request": "launch",
+            "mainClass": "learn.StringToInteger",
             "projectName": "data-tructrure_4d27b3f0"
         },
         {
